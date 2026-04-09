@@ -1,0 +1,812 @@
+[
+  {
+    "rule_id": "DDI-001",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "114970",
+    "drug_a_name": "warfarin",
+    "drug_b_name": "aspirin",
+    "severity": "CRITICAL",
+    "description": "Warfarin + Aspirin: significant bleeding risk. Concurrent use increases hemorrhagic events 3-5x.",
+    "recommendation": "Avoid concurrent use. If necessary, monitor INR closely and use lowest aspirin dose."
+  },
+  {
+    "rule_id": "DDI-002",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "41493",
+    "drug_a_name": "warfarin",
+    "drug_b_name": "ibuprofen",
+    "severity": "CRITICAL",
+    "description": "Warfarin + NSAIDs: markedly increased bleeding risk and potential for warfarin displacement.",
+    "recommendation": "Contraindicated. Use acetaminophen as analgesic alternative with close INR monitoring."
+  },
+  {
+    "rule_id": "DDI-003",
+    "drug_a_rxnorm": "36567",
+    "drug_b_rxnorm": "321988",
+    "drug_a_name": "simvastatin",
+    "drug_b_name": "amiodarone",
+    "severity": "CRITICAL",
+    "description": "Simvastatin + Amiodarone: risk of myopathy and rhabdomyolysis. Amiodarone inhibits CYP3A4.",
+    "recommendation": "Limit simvastatin to 20mg/day. Consider alternative statin (pravastatin, rosuvastatin)."
+  },
+  {
+    "rule_id": "DDI-004",
+    "drug_a_rxnorm": "32968",
+    "drug_b_rxnorm": "2200644",
+    "drug_a_name": "methotrexate",
+    "drug_b_name": "trimethoprim",
+    "severity": "CRITICAL",
+    "description": "Methotrexate + Trimethoprim: severe bone marrow suppression. Both inhibit dihydrofolate reductase.",
+    "recommendation": "Contraindicated. Monitor CBC. Folinic acid rescue if combination unavoidable."
+  },
+  {
+    "rule_id": "DDI-005",
+    "drug_a_rxnorm": "41493",
+    "drug_b_rxnorm": "7646",
+    "drug_a_name": "ibuprofen",
+    "drug_b_name": "lithium",
+    "severity": "CRITICAL",
+    "description": "NSAIDs + Lithium: NSAIDs reduce renal lithium clearance causing toxicity.",
+    "recommendation": "Avoid. Use acetaminophen. If NSAID required, reduce lithium dose and monitor serum levels."
+  },
+  {
+    "rule_id": "DDI-006",
+    "drug_a_rxnorm": "114970",
+    "drug_b_rxnorm": "7646",
+    "drug_a_name": "aspirin",
+    "drug_b_name": "metformin",
+    "severity": "INFORMATIONAL",
+    "description": "Low-dose aspirin with metformin: generally safe. Monitor for GI effects.",
+    "recommendation": "No dose adjustment required. Monitor for GI symptoms."
+  },
+  {
+    "rule_id": "DDI-007",
+    "drug_a_rxnorm": "50121",
+    "drug_b_rxnorm": "2200644",
+    "drug_a_name": "fluoxetine",
+    "drug_b_name": "tramadol",
+    "severity": "CRITICAL",
+    "description": "SSRIs + Tramadol: serotonin syndrome risk. Tramadol inhibits serotonin reuptake.",
+    "recommendation": "Contraindicated. Use alternative analgesic. If unavoidable, monitor for serotonin syndrome."
+  },
+  {
+    "rule_id": "DDI-008",
+    "drug_a_rxnorm": "29046",
+    "drug_b_rxnorm": "50121",
+    "drug_a_name": "lisinopril",
+    "drug_b_name": "potassium",
+    "severity": "WARNING",
+    "description": "ACE inhibitors + Potassium supplements: hyperkalemia risk.",
+    "recommendation": "Monitor serum potassium. Avoid high-dose potassium supplementation."
+  },
+  {
+    "rule_id": "DDI-100",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "5640",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Ibuprofen",
+    "severity": "CRITICAL",
+    "description": "Warfarin + Ibuprofen: Significantly increased risk of gastrointestinal bleeding and bruising. (Pharmacodynamic (additive antiplatelet effect) & Pharmacokinetic (GI irritation))",
+    "recommendation": "Avoid concomitant use. If an analgesic is required, choose acetaminophen. Educate the patient on signs of bleeding (melena, bruising). Monitor INR closely if co-administration is unavoidable."
+  },
+  {
+    "rule_id": "DDI-101",
+    "drug_a_rxnorm": "36567",
+    "drug_b_rxnorm": "21212",
+    "drug_a_name": "Simvastatin",
+    "drug_b_name": "Clarithromycin",
+    "severity": "CRITICAL",
+    "description": "Simvastatin + Clarithromycin: Increased simvastatin exposure leading to a significantly elevated risk of myopathy and rhabdomyolysis. (Pharmacokinetic: Clarithromycin is a potent CYP3A4 inhibitor, dramatically reducing the metabolism of Simvastatin.)",
+    "recommendation": "Use a non-CYP3A4 inhibiting antibiotic like azithromycin. If clarithromycin is essential, temporarily withhold simvastatin for the duration of antibiotic therapy. Advise the patient to report any unexplained muscle pain, tenderness, or weakness immediately."
+  },
+  {
+    "rule_id": "DDI-102",
+    "drug_a_rxnorm": "36437",
+    "drug_b_rxnorm": "10689",
+    "drug_a_name": "Sertraline",
+    "drug_b_name": "Tramadol",
+    "severity": "CRITICAL",
+    "description": "Sertraline + Tramadol: Increased risk of serotonin syndrome (symptoms: agitation, confusion, tachycardia, hyperthermia, muscle rigidity). (Pharmacodynamic: Both drugs increase serotonin activity. Tramadol also inhibits serotonin reuptake.)",
+    "recommendation": "Avoid combination. Choose an opioid with minimal serotonergic activity. If combination is used, monitor closely for symptoms of serotonin syndrome, especially during treatment initiation and dose increases."
+  },
+  {
+    "rule_id": "DDI-103",
+    "drug_a_rxnorm": "32968",
+    "drug_b_rxnorm": "7646",
+    "drug_a_name": "Clopidogrel",
+    "drug_b_name": "Omeprazole",
+    "severity": "WARNING",
+    "description": "Clopidogrel + Omeprazole: Reduced antiplatelet effect of clopidogrel, potentially increasing the risk of cardiovascular events like stent thrombosis. (Pharmacokinetic: Omeprazole inhibits CYP2C19, the enzyme required to convert clopidogrel into its active metabolite.)",
+    "recommendation": "Use a PPI with minimal CYP2C19 inhibition (e.g., pantoprazole) or an H2-receptor antagonist (e.g., famotidine). Do not use omeprazole or esomeprazole in patients on clopidogrel."
+  },
+  {
+    "rule_id": "DDI-104",
+    "drug_a_rxnorm": "3407",
+    "drug_b_rxnorm": "11170",
+    "drug_a_name": "Digoxin",
+    "drug_b_name": "Verapamil",
+    "severity": "CRITICAL",
+    "description": "Digoxin + Verapamil: Increased digoxin serum levels, leading to a high risk of toxicity (nausea, vomiting, dizziness, cardiac arrhythmias). (Pharmacokinetic: Verapamil inhibits P-glycoprotein, reducing the renal clearance of digoxin.)",
+    "recommendation": "Reduce the digoxin dose by 30-50% when initiating verapamil. Monitor digoxin levels closely 5-7 days after starting, stopping, or changing the dose of verapamil. Assess for clinical signs of toxicity."
+  },
+  {
+    "rule_id": "DDI-105",
+    "drug_a_rxnorm": "6448",
+    "drug_b_rxnorm": "5640",
+    "drug_a_name": "Lithium",
+    "drug_b_name": "Ibuprofen",
+    "severity": "CRITICAL",
+    "description": "Lithium + Ibuprofen: Increased lithium serum levels, resulting in lithium toxicity (nausea, tremor, confusion, ataxia, renal damage). (Pharmacokinetic: NSAIDs reduce renal blood flow and inhibit prostaglandin synthesis, leading to decreased renal clearance of lithium.)",
+    "recommendation": "Avoid NSAIDs. Use acetaminophen for pain relief. If an NSAID must be used, monitor lithium levels within 5-7 days of initiation and adjust the lithium dose accordingly. Closely monitor for signs of toxicity."
+  },
+  {
+    "rule_id": "DDI-106",
+    "drug_a_rxnorm": "6851",
+    "drug_b_rxnorm": "10829",
+    "drug_a_name": "Methotrexate",
+    "drug_b_name": "Trimethoprim/Sulfamethoxazole",
+    "severity": "CRITICAL",
+    "description": "Methotrexate + Trimethoprim/Sulfamethoxazole: Additive myelosuppression (neutropenia, thrombocytopenia) and increased risk of pancytopenia and methotrexate toxicity. (Pharmacodynamic: Both drugs are antifolate agents. Pharmacokinetic: Possible competition for renal secretion.)",
+    "recommendation": "Avoid combination, especially in patients on high-dose methotrexate. If co-trimoxazole is essential for Pneumocystis jirovecii pneumonia (PJP) prophylaxis, use with extreme caution, monitor complete blood counts (CBC) weekly, and consider leucovorin rescue."
+  },
+  {
+    "rule_id": "DDI-107",
+    "drug_a_rxnorm": "136411",
+    "drug_b_rxnorm": "4917",
+    "drug_a_name": "Sildenafil",
+    "drug_b_name": "Nitroglycerin",
+    "severity": "CRITICAL",
+    "description": "Sildenafil + Nitroglycerin: Profound hypotension, syncope, myocardial infarction, or stroke. (Pharmacodynamic: Both drugs cause vasodilation and potentiate hypotensive effects.)",
+    "recommendation": "CONTRANDICATED combination. Sildenafil is absolutely contraindicated in patients taking any form of nitrates. A washout period of at least 24 hours is required after the last dose of sildenafil before nitrates can be administered."
+  },
+  {
+    "rule_id": "DDI-108",
+    "drug_a_rxnorm": "8183",
+    "drug_b_rxnorm": "2551",
+    "drug_a_name": "Phenytoin",
+    "drug_b_name": "Ciprofloxacin",
+    "severity": "WARNING",
+    "description": "Phenytoin + Ciprofloxacin: Increased phenytoin levels (risk of toxicity: nystagmus, ataxia, drowsiness) and decreased ciprofloxacin levels (risk of therapeutic failure). (Pharmacokinetic: Ciprofloxacin may inhibit the metabolism of phenytoin, and phenytoin may increase the metabolism of ciprofloxacin.)",
+    "recommendation": "Monitor phenytoin levels closely if co-administration is necessary. Consider using an alternative antibiotic that does not interact, such as a third-generation cephalosporin. Adjust doses based on levels and clinical response."
+  },
+  {
+    "rule_id": "DDI-109",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "4450",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Fluconazole",
+    "severity": "CRITICAL",
+    "description": "Warfarin + Fluconazole: Significantly increased warfarin levels and anticoagulant effect, leading to a high risk of bleeding. (Pharmacokinetic: Fluconazole inhibits CYP2C9, the primary enzyme responsible for warfarin metabolism.)",
+    "recommendation": "Avoid concomitant use if possible. If combination is necessary, reduce warfarin dose by 25-33% upon initiation of fluconazole. Monitor INR frequently (every 2-3 days initially) and adjust warfarin dose accordingly. Educate patient on bleeding signs."
+  },
+  {
+    "rule_id": "DDI-110",
+    "drug_a_rxnorm": "11118",
+    "drug_b_rxnorm": "28439",
+    "drug_a_name": "Valproic Acid",
+    "drug_b_name": "Lamotrigine",
+    "severity": "CRITICAL",
+    "description": "Valproic Acid + Lamotrigine: Doubling or more of lamotrigine serum levels, dramatically increasing the risk of serious skin rashes, including Stevens-Johnson syndrome and toxic epidermal necrolysis. (Pharmacokinetic: Valproic acid inhibits the glucuronidation of lamotrigine, reducing its clearance.)",
+    "recommendation": "If used together, the lamotrigine dose must be reduced by approximately 50% compared to the typical monotherapy dose. Initiate lamotrigine at a very low dose and titrate extremely slowly. Counsel the patient to discontinue therapy immediately at the first sign of rash."
+  },
+  {
+    "rule_id": "DDI-111",
+    "drug_a_rxnorm": "3008",
+    "drug_b_rxnorm": "258326",
+    "drug_a_name": "Cyclosporine",
+    "drug_b_name": "St. John's Wort",
+    "severity": "CRITICAL",
+    "description": "Cyclosporine + St. John's Wort: Dramatically reduced cyclosporine levels, leading to subtherapeutic immunosuppression and high risk of organ rejection in transplant patients. (Pharmacokinetic: St. John's Wort is a potent inducer of CYP3A4 and P-glycoprotein, increasing the metabolism and clearance of cyclosporine.)",
+    "recommendation": "Patients on cyclosporine must be advised to avoid St. John's Wort and all other herbal supplements unless explicitly approved by their transplant team. If taken, cyclosporine levels must be monitored closely and the dose increased significantly, though this is not recommended."
+  },
+  {
+    "rule_id": "DDI-112",
+    "drug_a_rxnorm": "10438",
+    "drug_b_rxnorm": "2551",
+    "drug_a_name": "Theophylline",
+    "drug_b_name": "Ciprofloxacin",
+    "severity": "CRITICAL",
+    "description": "Theophylline + Ciprofloxacin: Markedly increased theophylline serum concentrations, leading to toxicity (nausea, vomiting, seizures, cardiac arrhythmias). (Pharmacokinetic: Ciprofloxacin inhibits CYP1A2, the main enzyme responsible for theophylline metabolism.)",
+    "recommendation": "Avoid combination. Choose an alternative antibiotic. If co-administration is unavoidable, reduce theophylline dose by 30-50%, monitor serum theophylline levels closely, and watch for signs of toxicity."
+  },
+  {
+    "rule_id": "DDI-113",
+    "drug_a_rxnorm": "9384",
+    "drug_b_rxnorm": "11289",
+    "drug_a_name": "Rifampin",
+    "drug_b_name": "Warfarin",
+    "severity": "CRITICAL",
+    "description": "Rifampin + Warfarin: Greatly reduced warfarin effect, leading to subtherapeutic anticoagulation and risk of thrombosis. (Pharmacokinetic: Rifampin is a potent inducer of CYP2C9 and other enzymes, dramatically increasing the metabolism of warfarin.)",
+    "recommendation": "Avoid combination if possible. If rifampin is essential, expect to increase the warfarin dose significantly (often by 2-3 fold). Monitor INR every 2-3 days after starting rifampin and frequently adjust the warfarin dose. Be prepared to drastically reduce the warfarin dose once rifampin is stopped."
+  },
+  {
+    "rule_id": "DDI-114",
+    "drug_a_rxnorm": "2670",
+    "drug_b_rxnorm": "32937",
+    "drug_a_name": "Codeine",
+    "drug_b_name": "Paroxetine",
+    "severity": "CRITICAL",
+    "description": "Codeine + Paroxetine: Greatly reduced analgesic efficacy of codeine due to impaired conversion to morphine. (Pharmacokinetic: Paroxetine is a strong CYP2D6 inhibitor. Codeine is a prodrug that requires CYP2D6 to be converted into its active form, morphine.)",
+    "recommendation": "Do not use codeine in patients taking strong CYP2D6 inhibitors. Choose an alternative opioid that is not metabolized by CYP2D6, such as morphine or oxycodone."
+  },
+  {
+    "rule_id": "DDI-115",
+    "drug_a_rxnorm": "519",
+    "drug_b_rxnorm": "1256",
+    "drug_a_name": "Allopurinol",
+    "drug_b_name": "Azathioprine",
+    "severity": "CRITICAL",
+    "description": "Allopurinol + Azathioprine: Dramatically increased levels of azathioprine and its active metabolites, leading to severe myelosuppression (pancytopenia) and increased risk of infection. (Pharmacodynamic: Allopurinol inhibits xanthine oxidase (XO), the enzyme that metabolizes azathioprine to its inactive metabolites.)",
+    "recommendation": "Avoid combination. If absolutely necessary, the dose of azathioprine must be reduced to 25-33% of the usual dose. Monitor complete blood counts (CBC) weekly for at least the first month. Febuxostat is a safer alternative as it is not an XO inhibitor."
+  },
+  {
+    "rule_id": "DDI-116",
+    "drug_a_rxnorm": "190376",
+    "drug_b_rxnorm": "36437",
+    "drug_a_name": "Linezolid",
+    "drug_b_name": "Sertraline",
+    "severity": "CRITICAL",
+    "description": "Linezolid + Sertraline: Increased risk of serotonin syndrome. (Pharmacodynamic: Linezolid is a weak, reversible monoamine oxidase inhibitor (MAOI). Sertraline is a serotonin reuptake inhibitor (SSRI).)",
+    "recommendation": "Avoid combination. If linezolid is essential for vancomycin-resistant Enterococcus (VRE), consider discontinuing the SSRI if clinically feasible (with appropriate washout period). Monitor closely for symptoms of serotonin syndrome if co-administered."
+  },
+  {
+    "rule_id": "DDI-117",
+    "drug_a_rxnorm": "3443",
+    "drug_b_rxnorm": "6918",
+    "drug_a_name": "Diltiazem",
+    "drug_b_name": "Metoprolol",
+    "severity": "WARNING",
+    "description": "Diltiazem + Metoprolol: Increased risk of bradycardia, AV block, and hypotension. (Pharmacodynamic: Additive effects on cardiac conduction (SA and AV node) and contractility.)",
+    "recommendation": "Use combination with caution. Monitor heart rate, blood pressure, and ECG. Consider dose reduction of one or both agents. Avoid in patients with pre-existing bradycardia or conduction defects."
+  },
+  {
+    "rule_id": "DDI-118",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "161",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Acetaminophen",
+    "severity": "WARNING",
+    "description": "Warfarin + Acetaminophen: Increased anticoagulant effect and risk of bleeding, especially with regular use of high doses (>2g per day). (Unclear; may involve inhibition of warfarin metabolism or reduction of vitamin K-dependent clotting factors.)",
+    "recommendation": "Use acetaminophen at the lowest effective dose and for the shortest duration possible. Avoid chronic high-dose use. Monitor INR more frequently when starting or stopping chronic acetaminophen in a patient on stable warfarin therapy."
+  },
+  {
+    "rule_id": "DDI-119",
+    "drug_a_rxnorm": "10582",
+    "drug_b_rxnorm": "1897",
+    "drug_a_name": "Levothyroxine",
+    "drug_b_name": "Calcium Carbonate",
+    "severity": "WARNING",
+    "description": "Levothyroxine + Calcium Carbonate: Reduced levothyroxine absorption, leading to decreased efficacy and symptoms of hypothyroidism. (Pharmacokinetic: Calcium binds to levothyroxine in the GI tract, forming an insoluble complex that reduces absorption.)",
+    "recommendation": "Administer levothyroxine on an empty stomach, at least 60 minutes before breakfast or at bedtime. Administer calcium supplements or calcium-containing antacids at a different time of day, at least 4 hours apart from levothyroxine."
+  },
+  {
+    "rule_id": "DDI-120",
+    "drug_a_rxnorm": "3407",
+    "drug_b_rxnorm": "4603",
+    "drug_a_name": "Digoxin",
+    "drug_b_name": "Furosemide",
+    "severity": "WARNING",
+    "description": "Digoxin + Furosemide: Increased risk of digoxin toxicity (arrhythmias, nausea, vomiting) even at therapeutic digoxin levels. (Pharmacodynamic: Furosemide can cause hypokalemia and hypomagnesemia, which sensitize the myocardium to the effects of digoxin.)",
+    "recommendation": "Monitor serum potassium and magnesium levels closely, especially during initiation of diuretic therapy. Correct electrolyte imbalances promptly. Counsel patients on signs of digoxin toxicity."
+  },
+  {
+    "rule_id": "DDI-121",
+    "drug_a_rxnorm": "61381",
+    "drug_b_rxnorm": "3322",
+    "drug_a_name": "Olanzapine",
+    "drug_b_name": "Diazepam",
+    "severity": "WARNING",
+    "description": "Olanzapine + Diazepam: Increased risk of excessive sedation, drowsiness, respiratory depression, and impaired motor skills. (Pharmacodynamic: Additive CNS depression.)",
+    "recommendation": "Use combination with caution, especially in the elderly. Initiate with lower doses. Avoid activities requiring mental alertness (e.g., driving). Monitor for excessive sedation."
+  },
+  {
+    "rule_id": "DDI-122",
+    "drug_a_rxnorm": "4124",
+    "drug_b_rxnorm": "2002",
+    "drug_a_name": "Ethinyl Estradiol",
+    "drug_b_name": "Carbamazepine",
+    "severity": "CRITICAL",
+    "description": "Ethinyl Estradiol + Carbamazepine: Significantly reduced contraceptive efficacy, leading to unplanned pregnancy and breakthrough bleeding. (Pharmacokinetic: Carbamazepine is a potent inducer of CYP3A4, which increases the metabolism of estrogen.)",
+    "recommendation": "Avoid low-dose oral contraceptives in patients on carbamazepine. Use alternative contraceptive methods such as an IUD, depot medroxyprogesterone, or a contraceptive containing at least 50 mcg of estrogen (though even this may be less effective)."
+  },
+  {
+    "rule_id": "DDI-123",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "703",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Amiodarone",
+    "severity": "CRITICAL",
+    "description": "Warfarin + Amiodarone: Markedly increased warfarin effect and risk of bleeding. (Pharmacokinetic: Amiodarone inhibits CYP2C9, the primary enzyme responsible for warfarin metabolism.)",
+    "recommendation": "Initiate warfarin at a lower dose (e.g., 2-3 mg/day instead of 5 mg) in patients on amiodarone. Expect to reduce the maintenance warfarin dose by 30-50%. Monitor INR closely and frequently (2-3 times per week initially) during initiation and discontinuation of amiodarone."
+  },
+  {
+    "rule_id": "DDI-124",
+    "drug_a_rxnorm": "83367",
+    "drug_b_rxnorm": "28031",
+    "drug_a_name": "Atorvastatin",
+    "drug_b_name": "Itraconazole",
+    "severity": "CRITICAL",
+    "description": "Atorvastatin + Itraconazole: Increased atorvastatin exposure, elevating the risk of myopathy and rhabdomyolysis. (Pharmacokinetic: Itraconazole is a potent CYP3A4 inhibitor, reducing the metabolism of atorvastatin.)",
+    "recommendation": "Avoid combination. Use a statin not metabolized by CYP3A4 (e.g., pravastatin, rosuvastatin). If essential, use the lowest possible atorvastatin dose and monitor for muscle pain."
+  },
+  {
+    "rule_id": "DDI-125",
+    "drug_a_rxnorm": "6809",
+    "drug_b_rxnorm": "2541",
+    "drug_a_name": "Metformin",
+    "drug_b_name": "Cimetidine",
+    "severity": "WARNING",
+    "description": "Metformin + Cimetidine: Increased metformin levels, potentially increasing the risk of lactic acidosis. (Pharmacokinetic: Cimetidine may compete with metformin for renal tubular secretion, potentially reducing its clearance.)",
+    "recommendation": "Use an H2 antagonist that does not inhibit renal cation transport (e.g., famotidine). Monitor renal function and for signs of metformin toxicity."
+  },
+  {
+    "rule_id": "DDI-126",
+    "drug_a_rxnorm": "51272",
+    "drug_b_rxnorm": "8183",
+    "drug_a_name": "Quetiapine",
+    "drug_b_name": "Phenytoin",
+    "severity": "CRITICAL",
+    "description": "Quetiapine + Phenytoin: Dramatically reduced quetiapine levels, leading to loss of efficacy in treating psychiatric symptoms. (Pharmacokinetic: Phenytoin is a potent inducer of CYP3A4, which is primarily responsible for quetiapine metabolism.)",
+    "recommendation": "Avoid combination. Consider an alternative mood stabilizer/antipsychotic that is not metabolized by CYP3A4. If combination is necessary, a significant increase in quetiapine dose will be required, guided by clinical response and tolerability."
+  },
+  {
+    "rule_id": "DDI-127",
+    "drug_a_rxnorm": "136411",
+    "drug_b_rxnorm": "49276",
+    "drug_a_name": "Sildenafil",
+    "drug_b_name": "Alpha-blockers (e.g., Doxazosin)",
+    "severity": "CRITICAL",
+    "description": "Sildenafil + Alpha-blockers (e.g., Doxazosin): Symptomatic hypotension, dizziness, syncope. (Pharmacodynamic: Additive vasodilatory effects, leading to hypotension.)",
+    "recommendation": "Avoid use of sildenafil with alpha-blockers. If concomitant use is necessary, initiate sildenafil at the lowest dose (25 mg) only after the patient has been stable on their alpha-blocker therapy. Monitor blood pressure. Tamsulosin has less vasodilatory effect and may be safer."
+  },
+  {
+    "rule_id": "DDI-128",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "11258",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Vitamin K",
+    "severity": "CRITICAL",
+    "description": "Warfarin + Vitamin K: Reduced anticoagulant effect of warfarin, increasing risk of thrombosis. (Pharmacodynamic: Vitamin K is a cofactor for the synthesis of clotting factors that warfarin inhibits. It directly antagonizes warfarin's effect.)",
+    "recommendation": "Patients on warfarin should maintain a consistent dietary intake of Vitamin K. They should not take Vitamin K supplements unless specifically instructed to do so for the management of over-anticoagulation. Monitor INR more frequently if dietary habits change."
+  },
+  {
+    "rule_id": "DDI-129",
+    "drug_a_rxnorm": "2551",
+    "drug_b_rxnorm": "1897",
+    "drug_a_name": "Ciprofloxacin",
+    "drug_b_name": "Calcium Carbonate",
+    "severity": "WARNING",
+    "description": "Ciprofloxacin + Calcium Carbonate: Significantly reduced antibiotic absorption, leading to potential therapeutic failure. (Pharmacokinetic: Divalent cations (Ca2+) chelate ciprofloxacin in the GI tract, forming an insoluble complex that reduces absorption.)",
+    "recommendation": "Administer ciprofloxacin at least 2 hours before or 4 hours after calcium-containing products, antacids, or dairy."
+  },
+  {
+    "rule_id": "DDI-130",
+    "drug_a_rxnorm": "10582",
+    "drug_b_rxnorm": "7646",
+    "drug_a_name": "Levothyroxine",
+    "drug_b_name": "Proton Pump Inhibitors (e.g., Omeprazole)",
+    "severity": "WARNING",
+    "description": "Levothyroxine + Proton Pump Inhibitors (e.g., Omeprazole): Decreased levothyroxine efficacy, requiring dose increase. (Pharmacokinetic: PPIs increase gastric pH, which may impair the dissolution and absorption of levothyroxine tablets.)",
+    "recommendation": "Monitor TSH levels. Consider switching to a liquid levothyroxine formulation which is less affected by gastric pH. Maintain consistent timing relative to PPI dose."
+  },
+  {
+    "rule_id": "DDI-131",
+    "drug_a_rxnorm": "72625",
+    "drug_b_rxnorm": "1191",
+    "drug_a_name": "Duloxetine",
+    "drug_b_name": "Aspirin",
+    "severity": "WARNING",
+    "description": "Duloxetine + Aspirin: Increased risk of bleeding, particularly GI bleeding. (Pharmacodynamic: Both drugs increase the risk of bleeding via different mechanisms (SSRI effect on platelets + antiplatelet effect of aspirin).)",
+    "recommendation": "Use with caution. Monitor for signs of bleeding (e.g., bruising, melena). Use gastroprotective agents if combination is necessary."
+  },
+  {
+    "rule_id": "DDI-132",
+    "drug_a_rxnorm": "6918",
+    "drug_b_rxnorm": "3498",
+    "drug_a_name": "Metoprolol",
+    "drug_b_name": "Diphenhydramine",
+    "severity": "INFORMATIONAL",
+    "description": "Metoprolol + Diphenhydramine: Increased drowsiness and fatigue. (Pharmacodynamic: Additive sedative effects.)",
+    "recommendation": "Use a non-sedating antihistamine if possible. If using diphenhydramine, advise patient to avoid driving or operating machinery."
+  },
+  {
+    "rule_id": "DDI-133",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "236809",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Ginkgo Biloba",
+    "severity": "WARNING",
+    "description": "Warfarin + Ginkgo Biloba: Increased risk of bleeding. (Pharmacodynamic: Ginkgo biloba has antiplatelet properties.)",
+    "recommendation": "Advise patients on warfarin to avoid ginkgo biloba and other herbal supplements with anticoagulant effects. Monitor INR if use occurs."
+  },
+  {
+    "rule_id": "DDI-134",
+    "drug_a_rxnorm": "36437",
+    "drug_b_rxnorm": "77492",
+    "drug_a_name": "Sertraline",
+    "drug_b_name": "Tamsulosin",
+    "severity": "INFORMATIONAL",
+    "description": "Sertraline + Tamsulosin: Potential for increased incidence of dizziness or orthostatic hypotension. (Pharmacodynamic: Sertraline can inhibit CYP2D6, potentially increasing tamsulosin levels slightly.)",
+    "recommendation": "Usually minor. Monitor patient for increased side effects of tamsulosin (dizziness, lightheadedness)."
+  },
+  {
+    "rule_id": "DDI-135",
+    "drug_a_rxnorm": "4603",
+    "drug_b_rxnorm": "5640",
+    "drug_a_name": "Furosemide",
+    "drug_b_name": "Ibuprofen",
+    "severity": "WARNING",
+    "description": "Furosemide + Ibuprofen: Fluid retention, edema, and reduced blood pressure control. (Pharmacodynamic: NSAIDs inhibit prostaglandin-mediated renal vasodilation, reducing the diuretic and antihypertensive efficacy of furosemide.)",
+    "recommendation": "Avoid regular NSAID use. If needed for pain, use the lowest dose for the shortest duration and monitor for weight gain and hypertension."
+  },
+  {
+    "rule_id": "DDI-136",
+    "drug_a_rxnorm": "2556",
+    "drug_b_rxnorm": "10689",
+    "drug_a_name": "Citalopram",
+    "drug_b_name": "Tramadol",
+    "severity": "CRITICAL",
+    "description": "Citalopram + Tramadol: Increased risk of serotonin syndrome and reduced analgesic efficacy of tramadol. (Pharmacodynamic: Increased serotonergic activity. Pharmacokinetic: CYP2D6 inhibition by citalopram may impair tramadol activation.)",
+    "recommendation": "Avoid combination. Choose an alternative opioid not metabolized by CYP2D6."
+  },
+  {
+    "rule_id": "DDI-137",
+    "drug_a_rxnorm": "253182",
+    "drug_b_rxnorm": "8787",
+    "drug_a_name": "Insulin",
+    "drug_b_name": "Beta-Blockers (e.g., Propranolol)",
+    "severity": "WARNING",
+    "description": "Insulin + Beta-Blockers (e.g., Propranolol): Masked hypoglycemia symptoms, increased risk of severe hypoglycemia. (Pharmacodynamic: Beta-blockers can mask tachycardia, a key symptom of hypoglycemia, and may impair glycogenolysis.)",
+    "recommendation": "Use cardioselective beta-blockers in diabetic patients when possible. Educate patients to be aware of other hypoglycemia signs (sweating, hunger, dizziness)."
+  },
+  {
+    "rule_id": "DDI-138",
+    "drug_a_rxnorm": "3407",
+    "drug_b_rxnorm": "155097",
+    "drug_a_name": "Digoxin",
+    "drug_b_name": "Hawthorn",
+    "severity": "WARNING",
+    "description": "Digoxin + Hawthorn: Potential for increased risk of bradycardia and digoxin toxicity. (Pharmacodynamic: Additive effects on cardiac conduction and contractility.)",
+    "recommendation": "Advise patients taking digoxin to avoid hawthorn supplements. Monitor heart rate and digoxin levels if use occurs."
+  },
+  {
+    "rule_id": "DDI-139",
+    "drug_a_rxnorm": "39786",
+    "drug_b_rxnorm": "6135",
+    "drug_a_name": "Venlafaxine",
+    "drug_b_name": "Ketoconazole",
+    "severity": "WARNING",
+    "description": "Venlafaxine + Ketoconazole: Increased venlafaxine and desvenlafaxine levels, potentially increasing side effects (hypertension, nausea, serotonin syndrome risk). (Pharmacokinetic: Ketoconazole inhibits CYP3A4, which metabolizes venlafaxine to a lesser extent. It primarily inhibits CYP2D6, affecting the active metabolite.)",
+    "recommendation": "Monitor for increased side effects of venlafaxine. Consider dose reduction if necessary."
+  },
+  {
+    "rule_id": "DDI-140",
+    "drug_a_rxnorm": "8183",
+    "drug_b_rxnorm": "11289",
+    "drug_a_name": "Phenytoin",
+    "drug_b_name": "Warfarin",
+    "severity": "WARNING",
+    "description": "Phenytoin + Warfarin: Unpredictable effect on INR; may increase or decrease warfarin effect. (Pharmacokinetic: Complex. Phenytoin can induce CYP2C9, increasing warfarin metabolism. It may also displace warfarin from protein binding sites.)",
+    "recommendation": "Monitor INR closely (weekly initially) when starting, stopping, or changing the dose of either drug. Adjust warfarin dose as needed."
+  },
+  {
+    "rule_id": "DDI-141",
+    "drug_a_rxnorm": "3322",
+    "drug_b_rxnorm": "2541",
+    "drug_a_name": "Diazepam",
+    "drug_b_name": "Cimetidine",
+    "severity": "WARNING",
+    "description": "Diazepam + Cimetidine: Increased diazepam levels, leading to prolonged sedation and CNS depression. (Pharmacokinetic: Cimetidine inhibits CYP3A4 and CYP2C19, impairing the metabolism of diazepam.)",
+    "recommendation": "Use an H2 antagonist that does not significantly inhibit CYP enzymes (e.g., famotidine). Consider a lower diazepam dose if cimetidine is used."
+  },
+  {
+    "rule_id": "DDI-142",
+    "drug_a_rxnorm": "6448",
+    "drug_b_rxnorm": "29046",
+    "drug_a_name": "Lithium",
+    "drug_b_name": "ACE Inhibitors (e.g., Lisinopril)",
+    "severity": "CRITICAL",
+    "description": "Lithium + ACE Inhibitors (e.g., Lisinopril): Increased lithium levels and risk of toxicity. (Pharmacokinetic: ACE inhibitors can reduce renal clearance of lithium by altering sodium balance.)",
+    "recommendation": "Avoid combination if possible. If used, monitor lithium levels within 1 week of initiation and after any dose change of the ACE inhibitor. Reduce lithium dose as necessary."
+  },
+  {
+    "rule_id": "DDI-143",
+    "drug_a_rxnorm": "136411",
+    "drug_b_rxnorm": "4053",
+    "drug_a_name": "Sildenafil",
+    "drug_b_name": "Erythromycin",
+    "severity": "WARNING",
+    "description": "Sildenafil + Erythromycin: Increased sildenafil levels, increasing the risk of side effects (hypotension, flushing, priapism). (Pharmacokinetic: Erythromycin inhibits CYP3A4, the primary metabolizing enzyme for sildenafil.)",
+    "recommendation": "Consider a macrolide that does not inhibit CYP3A4 (e.g., azithromycin). If erythromycin is used, a lower dose of sildenafil (25 mg) is recommended."
+  },
+  {
+    "rule_id": "DDI-144",
+    "drug_a_rxnorm": "6922",
+    "drug_b_rxnorm": "448",
+    "drug_a_name": "Metronidazole",
+    "drug_b_name": "Ethanol",
+    "severity": "CRITICAL",
+    "description": "Metronidazole + Ethanol: Acetaldehyde accumulation causing nausea, vomiting, flushing, tachycardia, and hypotension. (Pharmacodynamic: Disulfiram-like reaction. Metronidazole inhibits aldehyde dehydrogenase.)",
+    "recommendation": "Avoid alcohol and alcohol-containing products (e.g., cough syrup) during and for at least 72 hours after finishing metronidazole therapy."
+  },
+  {
+    "rule_id": "DDI-145",
+    "drug_a_rxnorm": "10395",
+    "drug_b_rxnorm": "24947",
+    "drug_a_name": "Tetracycline",
+    "drug_b_name": "Ferrous Sulfate",
+    "severity": "CRITICAL",
+    "description": "Tetracycline + Ferrous Sulfate: Markedly reduced absorption of both tetracycline and iron, leading to therapeutic failure for both. (Pharmacokinetic: Divalent cations (Fe2+) chelate tetracycline in the GI tract, forming an insoluble complex.)",
+    "recommendation": "Administer tetracycline 2 hours before or 4 hours after iron supplements."
+  },
+  {
+    "rule_id": "DDI-146",
+    "drug_a_rxnorm": "42347",
+    "drug_b_rxnorm": "85762",
+    "drug_a_name": "Bupropion",
+    "drug_b_name": "Ritonavir",
+    "severity": "WARNING",
+    "description": "Bupropion + Ritonavir: Reduced bupropion levels and efficacy. (Pharmacokinetic: Ritonavir may induce the metabolism of bupropion via CYP2B6.)",
+    "recommendation": "Monitor for reduced antidepressant effect. A bupropion dose increase may be necessary."
+  },
+  {
+    "rule_id": "DDI-147",
+    "drug_a_rxnorm": "61381",
+    "drug_b_rxnorm": "2002",
+    "drug_a_name": "Olanzapine",
+    "drug_b_name": "Carbamazepine",
+    "severity": "CRITICAL",
+    "description": "Olanzapine + Carbamazepine: Dramatically reduced olanzapine levels, leading to loss of antipsychotic efficacy. (Pharmacokinetic: Carbamazepine is a potent inducer of CYP1A2, which metabolizes olanzapine.)",
+    "recommendation": "Avoid combination. If necessary, the olanzapine dose may need to be doubled or more. Monitor clinical response closely."
+  },
+  {
+    "rule_id": "DDI-148",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "236344",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Saw Palmetto",
+    "severity": "INFORMATIONAL",
+    "description": "Warfarin + Saw Palmetto: Potential increased risk of bleeding, though evidence is weak. (Theoretical pharmacodynamic: Potential antiplatelet effects.)",
+    "recommendation": "Due to theoretical risk and lack of standardization, advise patients to avoid saw palmetto while on warfarin."
+  },
+  {
+    "rule_id": "DDI-149",
+    "drug_a_rxnorm": "32937",
+    "drug_b_rxnorm": "10324",
+    "drug_a_name": "Paroxetine",
+    "drug_b_name": "Tamoxifen",
+    "severity": "CRITICAL",
+    "description": "Paroxetine + Tamoxifen: Drastically reduced endoxifen levels, significantly increasing the risk of breast cancer recurrence. (Pharmacokinetic: Paroxetine is a strong CYP2D6 inhibitor. Tamoxifen is a prodrug requiring CYP2D6 for conversion to its active metabolite, endoxifen.)",
+    "recommendation": "Avoid strong CYP2D6 inhibitors in patients taking tamoxifen. Choose an antidepressant with minimal CYP2D6 inhibition (e.g., venlafaxine, citalopram)."
+  },
+  {
+    "rule_id": "DDI-150",
+    "drug_a_rxnorm": "3443",
+    "drug_b_rxnorm": "136411",
+    "drug_a_name": "Diltiazem",
+    "drug_b_name": "Sildenafil",
+    "severity": "WARNING",
+    "description": "Diltiazem + Sildenafil: Increased risk of hypotension, dizziness, and flushing. (Pharmacodynamic: Additive vasodilatory effects. Pharmacokinetic: Diltiazem may inhibit CYP3A4, increasing sildenafil levels.)",
+    "recommendation": "Initiate sildenafil at the lowest possible dose (25 mg). Monitor blood pressure. Avoid in patients with borderline low BP."
+  },
+  {
+    "rule_id": "DDI-151",
+    "drug_a_rxnorm": "704",
+    "drug_b_rxnorm": "448",
+    "drug_a_name": "Amitriptyline",
+    "drug_b_name": "Alcohol",
+    "severity": "CRITICAL",
+    "description": "Amitriptyline + Alcohol: Severely impaired motor skills, dizziness, and increased risk of overdose. (Pharmacodynamic: Additive CNS depression.)",
+    "recommendation": "Patients should be advised to avoid alcohol while taking amitriptyline."
+  },
+  {
+    "rule_id": "DDI-152",
+    "drug_a_rxnorm": "4603",
+    "drug_b_rxnorm": "1596450",
+    "drug_a_name": "Furosemide",
+    "drug_b_name": "Gentamicin",
+    "severity": "CRITICAL",
+    "description": "Furosemide + Gentamicin: Increased risk of irreversible hearing loss and acute kidney injury. (Pharmacodynamic: Both drugs are ototoxic and nephrotoxic. Furosemide can cause volume depletion, exacerbating gentamicin toxicity.)",
+    "recommendation": "Avoid combination if possible. If essential, ensure adequate hydration, monitor gentamicin trough levels, and assess renal function and hearing daily."
+  },
+  {
+    "rule_id": "DDI-153",
+    "drug_a_rxnorm": "2002",
+    "drug_b_rxnorm": "3640",
+    "drug_a_name": "Carbamazepine",
+    "drug_b_name": "Doxycycline",
+    "severity": "WARNING",
+    "description": "Carbamazepine + Doxycycline: Reduced doxycycline levels and antibiotic efficacy. (Pharmacokinetic: Carbamazepine induces CYP3A4, increasing the metabolism of doxycycline.)",
+    "recommendation": "Consider increasing the doxycycline dose or choosing an antibiotic not metabolized by CYP3A4 (e.g., a cephalosporin)."
+  },
+  {
+    "rule_id": "DDI-154",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "659476",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Green Tea",
+    "severity": "INFORMATIONAL",
+    "description": "Warfarin + Green Tea: Reduced INR and anticoagulant effect. (Pharmacodynamic: Green tea contains vitamin K, which can antagonize warfarin's effect.)",
+    "recommendation": "Advise patients to maintain a consistent intake of green tea and other vitamin K-containing foods and beverages. Do not start or stop drinking it regularly while on warfarin."
+  },
+  {
+    "rule_id": "DDI-155",
+    "drug_a_rxnorm": "253182",
+    "drug_b_rxnorm": "5487",
+    "drug_a_name": "Insulin",
+    "drug_b_name": "Thiazide Diuretics (e.g., HCTZ)",
+    "severity": "WARNING",
+    "description": "Insulin + Thiazide Diuretics (e.g., HCTZ): Worsened glycemic control, requiring an increase in insulin dose. (Pharmacodynamic: Thiazides can cause hypokalemia and hyperglycemia.)",
+    "recommendation": "Monitor blood glucose and potassium levels after starting a thiazide diuretic. Adjust insulin dose as needed."
+  },
+  {
+    "rule_id": "DDI-156",
+    "drug_a_rxnorm": "140587",
+    "drug_b_rxnorm": "4450",
+    "drug_a_name": "Celecoxib",
+    "drug_b_name": "Fluconazole",
+    "severity": "WARNING",
+    "description": "Celecoxib + Fluconazole: Increased celecoxib levels, increasing the risk of GI bleeding and cardiovascular events. (Pharmacokinetic: Fluconazole inhibits CYP2C9, the primary enzyme responsible for celecoxib metabolism.)",
+    "recommendation": "Avoid combination. Use caution and consider reducing the celecoxib dose if co-administration is necessary."
+  },
+  {
+    "rule_id": "DDI-157",
+    "drug_a_rxnorm": "3407",
+    "drug_b_rxnorm": "21212",
+    "drug_a_name": "Digoxin",
+    "drug_b_name": "Macrolides (e.g., Clarithromycin)",
+    "severity": "CRITICAL",
+    "description": "Digoxin + Macrolides (e.g., Clarithromycin): Increased digoxin levels and risk of toxicity. (Pharmacokinetic: Macrolides may inhibit P-glycoprotein and alter gut flora that metabolize digoxin, increasing its absorption.)",
+    "recommendation": "Avoid clarithromycin and erythromycin. Azithromycin is preferred. If used, monitor digoxin levels and reduce dose if necessary."
+  },
+  {
+    "rule_id": "DDI-158",
+    "drug_a_rxnorm": "51272",
+    "drug_b_rxnorm": "5489",
+    "drug_a_name": "Quetiapine",
+    "drug_b_name": "Hydrocodone",
+    "severity": "WARNING",
+    "description": "Quetiapine + Hydrocodone: Increased sedation, dizziness, and impaired mental alertness. (Pharmacodynamic: Additive CNS depression.)",
+    "recommendation": "Initiate with lower doses of both medications. Advise patient to avoid driving or operating machinery until effects are known."
+  },
+  {
+    "rule_id": "DDI-159",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "233698",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Dronedarone",
+    "severity": "CRITICAL",
+    "description": "Warfarin + Dronedarone: Increased warfarin levels and risk of bleeding. (Pharmacokinetic: Dronedarone inhibits CYP2C9, reducing the metabolism of warfarin.)",
+    "recommendation": "Reduce warfarin dose by 50% upon initiation of dronedarone. Monitor INR closely and frequently (e.g., weekly) thereafter."
+  },
+  {
+    "rule_id": "DDI-160",
+    "drug_a_rxnorm": "36437",
+    "drug_b_rxnorm": "37418",
+    "drug_a_name": "Sertraline",
+    "drug_b_name": "Sumatriptan",
+    "severity": "WARNING",
+    "description": "Sertraline + Sumatriptan: Theoretical increased risk of serotonin syndrome. (Pharmacodynamic: Theoretical increased serotonergic activity.)",
+    "recommendation": "Use combination with caution. Monitor for symptoms of serotonin syndrome, especially when initiating or increasing doses."
+  },
+  {
+    "rule_id": "DDI-161",
+    "drug_a_rxnorm": "6922",
+    "drug_b_rxnorm": "6448",
+    "drug_a_name": "Metronidazole",
+    "drug_b_name": "Lithium",
+    "severity": "WARNING",
+    "description": "Metronidazole + Lithium: Increased lithium levels and risk of toxicity. (Pharmacokinetic: Mechanism unclear; may reduce renal clearance of lithium.)",
+    "recommendation": "Avoid combination if possible. If used, monitor lithium levels within 3-5 days of starting metronidazole."
+  },
+  {
+    "rule_id": "DDI-162",
+    "drug_a_rxnorm": "83367",
+    "drug_b_rxnorm": "1431224",
+    "drug_a_name": "Atorvastatin",
+    "drug_b_name": "Grapefruit Juice",
+    "severity": "CRITICAL",
+    "description": "Atorvastatin + Grapefruit Juice: Markedly increased atorvastatin absorption and exposure, significantly increasing the risk of myopathy. (Pharmacokinetic: Compounds in grapefruit juice inhibit intestinal CYP3A4, reducing the first-pass metabolism of atorvastatin.)",
+    "recommendation": "Patients taking atorvastatin should avoid consuming grapefruit juice entirely."
+  },
+  {
+    "rule_id": "DDI-163",
+    "drug_a_rxnorm": "39786",
+    "drug_b_rxnorm": "6813",
+    "drug_a_name": "Venlafaxine",
+    "drug_b_name": "Methadone",
+    "severity": "WARNING",
+    "description": "Venlafaxine + Methadone: Potential for increased methadone levels and increased risk of QTc prolongation. (Pharmacokinetic: Venlafaxine may inhibit CYP2D6, potentially affecting methadone metabolism. Pharmacodynamic: Additive QTc prolongation risk.)",
+    "recommendation": "Use with caution. Consider monitoring the QTc interval, especially in patients with cardiac risk factors or on high doses."
+  },
+  {
+    "rule_id": "DDI-164",
+    "drug_a_rxnorm": "2556",
+    "drug_b_rxnorm": "20352",
+    "drug_a_name": "Citalopram",
+    "drug_b_name": "Carvedilol",
+    "severity": "INFORMATIONAL",
+    "description": "Citalopram + Carvedilol: Potential for a slight increase in carvedilol levels and effects (bradycardia, hypotension). (Pharmacokinetic: Citalopram is a weak CYP2D6 inhibitor. Carvedilol is metabolized by CYP2D6.)",
+    "recommendation": "Usually not clinically significant. Monitor for increased beta-blocker side effects."
+  },
+  {
+    "rule_id": "DDI-165",
+    "drug_a_rxnorm": "9997",
+    "drug_b_rxnorm": "3407",
+    "drug_a_name": "Spironolactone",
+    "drug_b_name": "Digoxin",
+    "severity": "INFORMATIONAL",
+    "description": "Spironolactone + Digoxin: Slight increase in digoxin levels. (Pharmacokinetic: Spironolactone may slightly reduce the renal clearance of digoxin.)",
+    "recommendation": "Monitor digoxin levels if spironolactone is started, stopped, or its dose is changed."
+  },
+  {
+    "rule_id": "DDI-166",
+    "drug_a_rxnorm": "7646",
+    "drug_b_rxnorm": "2626",
+    "drug_a_name": "Omeprazole",
+    "drug_b_name": "Clozapine",
+    "severity": "WARNING",
+    "description": "Omeprazole + Clozapine: Increased risk of clozapine toxicity (sedation, seizures, myocarditis). (Pharmacokinetic: Omeprazole may inhibit CYP2C19 and CYP1A2, potentially increasing clozapine levels.)",
+    "recommendation": "Use with caution. Consider monitoring clozapine levels. Pantoprazole may be a safer PPI choice."
+  },
+  {
+    "rule_id": "DDI-167",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "1358977",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Cranberry Juice",
+    "severity": "INFORMATIONAL",
+    "description": "Warfarin + Cranberry Juice: Potential to increase INR and risk of bleeding. (Pharmacodynamic: Case reports suggest potential for increased anticoagulant effect; mechanism unclear.)",
+    "recommendation": "Advise patients to avoid consuming large or concentrated amounts of cranberry juice (e.g., capsules). Occasional small glasses are likely safe."
+  },
+  {
+    "rule_id": "DDI-168",
+    "drug_a_rxnorm": "6809",
+    "drug_b_rxnorm": "2231",
+    "drug_a_name": "Metformin",
+    "drug_b_name": "Cephalexin",
+    "severity": "INFORMATIONAL",
+    "description": "Metformin + Cephalexin: Theoretical minor increase in metformin levels. (Pharmacokinetic: Cephalexin may compete with metformin for renal tubular secretion.)",
+    "recommendation": "Not typically clinically significant. No action usually needed."
+  },
+  {
+    "rule_id": "DDI-169",
+    "drug_a_rxnorm": "3289",
+    "drug_b_rxnorm": "9068",
+    "drug_a_name": "Dextromethorphan",
+    "drug_b_name": "Quinidine",
+    "severity": "WARNING",
+    "description": "Dextromethorphan + Quinidine: Greatly increased dextromethorphan levels, leading to serotonin syndrome and CNS side effects. (Pharmacokinetic: Quinidine inhibits CYP2D6, dramatically reducing the metabolism of dextromethorphan.)",
+    "recommendation": "Avoid combination. Use a non-opioid cough suppressant."
+  },
+  {
+    "rule_id": "DDI-170",
+    "drug_a_rxnorm": "35636",
+    "drug_b_rxnorm": "2002",
+    "drug_a_name": "Risperidone",
+    "drug_b_name": "Carbamazepine",
+    "severity": "CRITICAL",
+    "description": "Risperidone + Carbamazepine: Complex; may alter the ratio of risperidone to its metabolite and reduce total active moiety levels, potentially reducing efficacy. (Pharmacokinetic: Carbamazepine induces CYP3A4, which metabolizes risperidone to its active metabolite. It also induces UGT and P-gp.)",
+    "recommendation": "Avoid combination. If necessary, monitor clinical response closely; the risperidone dose may need significant adjustment."
+  },
+  {
+    "rule_id": "DDI-171",
+    "drug_a_rxnorm": "11289",
+    "drug_b_rxnorm": "1191",
+    "drug_a_name": "Warfarin",
+    "drug_b_name": "Aspirin",
+    "severity": "CRITICAL",
+    "description": "Warfarin + Aspirin: Significantly increased risk of major bleeding, especially gastrointestinal bleeding. (Pharmacodynamic: Additive antiplatelet effects and GI irritation.)",
+    "recommendation": "This combination should only be used when the benefit clearly outweighs the risk (e.g., after coronary stent placement). Use low-dose aspirin (81 mg) and the lowest effective warfarin dose. Monitor for bleeding and consider PPI prophylaxis."
+  },
+  {
+    "rule_id": "DDI-173",
+    "drug_a_rxnorm": "4493",
+    "drug_b_rxnorm": "35636",
+    "drug_a_name": "Fluoxetine",
+    "drug_b_name": "Risperidone",
+    "severity": "WARNING",
+    "description": "Fluoxetine + Risperidone: Increased risperidone levels and decreased 9-hydroxyrisperidone levels, potentially increasing the risk of side effects (extrapyramidal symptoms, sedation). (Pharmacokinetic: Fluoxetine and its metabolite norfluoxetine are potent CYP2D6 inhibitors, reducing the metabolism of risperidone to its active metabolite.)",
+    "recommendation": "Use with caution. Consider a lower dose of risperidone or choosing an SSRI with less CYP2D6 inhibition (e.g., sertraline, citalopram)."
+  }
+]

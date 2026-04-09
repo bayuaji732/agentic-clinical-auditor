@@ -1,0 +1,14 @@
+[project]
+name = "clinical-safety-engine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.135.3",
+    "langgraph>=1.1.6",
+    "openai>=2.31.0",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.13.1",
+    "uvicorn>=0.44.0",
+]
