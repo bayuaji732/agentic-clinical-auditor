@@ -4,3 +4,5 @@ pydantic
 pydantic-settings
 langgraph
 openai
+streamlit
+requests

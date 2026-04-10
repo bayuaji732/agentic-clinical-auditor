@@ -120,3 +120,55 @@ clinical-safety-engine/
 └── utils/
     └── models.py            Dataclasses, enums, state types
 ```
+
+## Sample Clinical Notes (Drug–Drug Interaction Testing)
+```
+**CRITICAL (High-risk, must always trigger)**
+- Patient is prescribed 50mg Sildenafil for erectile dysfunction. Also taking Nitroglycerin sublingually for chest pain. Reports intermittent angina. 
+(👉 Classic PDE5 inhibitor + nitrate → severe hypotension risk)
+- Patient is on Warfarin for atrial fibrillation. Recently started Trimethoprim-Sulfamethoxazole for UTI. No known allergies. 
+(👉 Warfarin + TMP-SMX → major bleeding risk)
+
+**WARNING (Moderate risk, monitor / adjust)**
+- Patient is prescribed 20mg Lisinopril for hypertension. Also taking Spironolactone for heart failure management. Reports occasional fatigue. 
+(👉 ACE inhibitor + potassium-sparing diuretic → hyperkalemia risk)
+- Patient is taking Metformin for type 2 diabetes. Recently started Cimetidine for gastric reflux symptoms.
+(👉 Metformin + Cimetidine → increased metformin levels (renal clearance issue))
+
+**INFO / LOW (Mild interaction or advisory)**
+- Patient is prescribed Ibuprofen as needed for pain. Also taking Lisinopril for hypertension.
+(👉 NSAIDs may reduce ACE inhibitor efficacy (mild/moderate))
+- Patient is taking Aspirin 81mg daily for cardiovascular prevention. Also prescribed Omeprazole for GERD.
+(👉 Often co-prescribed; protective but still interaction-relevant context)
+
+**NO FLAGS (Control / Safe cases)**
+- Patient is prescribed Amoxicillin for bacterial sinusitis. Also taking Paracetamol as needed for fever. Patient has no known drug allergies.
+- Patient is on Atorvastatin for hyperlipidemia. Also taking Vitamin D supplements daily. Denies use of other medications.
+```
+
+## Improvements
+```text
+Optional: Ambiguity / NLP Edge Case
+These are useful for testing entity resolution + ambiguity flags:
+
+1. Patient started taking "the blue pill" today. Also uses nitro as needed for chest discomfort.
+
+👉 Should trigger:
+
+Ambiguity: “blue pill” → Sildenafil?
+DDI if resolved
+
+2. Patient reports taking "blood thinner" along with new antibiotic for infection.
+
+👉 Ambiguity:
+
+“blood thinner” → Warfarin? DOAC?
+Should go to manual review
+
+3. Patient on MTX for RA. "Started taking folic acid supplement." No dose specified.
+
+👉 Ambiguity:
+
+Folic acid is safe, but context is critical for MTX patients.
+Should be flagged for review to confirm dose.
+```
